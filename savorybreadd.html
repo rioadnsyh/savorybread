@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Bread</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        header {
+            background-color: #FF7F00;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background-color: #FF7F00;
+            padding: 1rem 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0)), 
+                      url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 3rem 0 ;
+            height: 80vh;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .menu-section, .milestone-section, .gallery-section {
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .menu-item {
+            background-color: #FFEDD5;
+            border-radius: 10px;
+            padding: 1.5rem;
+            width: 30%;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.1);
+            background-color: #FF7F00;
+            color: #fff;
+        }
+
+        .menu-item:active {
+            filter: brightness(0.9);
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .milestone {
+            background-color: #FFF2E6;
+            padding: 3rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .milestone-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .milestone-item img {
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            filter: blur(2px);
+            transition: all 0.3s ease;
+        }
+
+        .gallery img:hover {
+            filter: blur(0);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #FF7F00;
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #FF4500;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #FF7F00;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Selamat Datang di Savory Bread</h1>
+    <p>Roti Goreng, Pudding, dan Es Coffee Hazelnut Terbaik di Kota Ini!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#milestone">Value Proposition</a></li>
+        <li><a href="artikelbreadsavory.html">Artikel Produk</a></li>
+        <li><a href="#gallery">Konsumen</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="https://wa.me/+6288976210873">Hubungi Kami</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Rasakan Lezatnya Setiap Gigitan</h1>
+    <p>Pesan sekarang dan nikmati kelezatan Roti Goreng, Pudding, dan Es Coffee Hazelnut</p>
+    <a href="https://wa.me/+6288976210873" class="cta-button">Pesan Sekarang</a>
+</section>
+
+<section id="menu" class="menu-section">
+    <h2>Menu Kami</h2>
+    <div class="menu">
+        <div class="menu-item" onclick="window.location.href='https://wa.me/+6288976210873';">
+            <img src="sb.jpg" alt="Roti Goreng">
+            <h3>Savory Fried</h3>
+            <p>Savory Fried renyah dengan isian lezat yang menggoda.</p>
+        </div>
+        <div class="menu-item" onclick="window.location.href='https://wa.me/+6288976210873';">
+            <img src="pv.jpg" alt="Pudding">
+            <h3>Pudding Variant</h3>
+            <p>Pudding Variant lembut dan manis dengan aneka rasa favorit Anda.</p>
+        </div>
+        <div class="menu-item" onclick="window.location.href='https://wa.me/+6288976210873';">
+            <img src="ec.jpg" alt="Es Coffee Hazelnut">
+            <h3>Es Coffee Hazelnut</h3>
+            <p>Segarkan hari Anda dengan es coffee hazelnut yang creamy dan nikmat.</p>
+        </div>
+    </div>
+</section>
+
+<section id="milestone" class="milestone-section">
+    <h2>Value Proposition Kami</h2>
+    <div class="milestone">
+            <p> 1. Menggunakan bahan baku roti yang berkualitas.</p>
+            <p> 2. Varian Toping yang beragam.</p>
+            <p> 3. Bebas pilih vla (Vanilla dan coklat).</p>
+            <p> 4. Rasa saus yang khas. perpaduan mayonaise, saus barbeque dan bolognese.</p>
+        
+        </div>
+    </div>
+</section>
+
+<section>
+    
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff; /* Oranye sesuai tema */
+        }
+        .team {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .team-member {
+            text-align: center;
+            border: 2px solid #FF6F00;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .team-member h3 {
+            font-size: 18px;
+            color: #FF6F00;
+        }
+        .team-member p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <section id="team" class="team-section"></section>
+    <div class="container">
+        <div class="team">
+            <!-- Anggota 1 -->
+            <div class="team-member">
+                <img src="ridwan.jpg" alt="Anggota 1">
+                <h3>RIDWAN SEPTIANTO</h3>
+                <p>Direktur Utama</p>
+            </div>
+
+            <!-- Anggota 2 -->
+            <div class="team-member">
+                <img src="ori.jpg" alt="Anggota 2">
+                <h3>DEFRI CHARLES SEUK</h3>
+                <p>Manager Oprasional</p>
+            </div>
+
+            <!-- Anggota 3 -->
+            <div class="team-member">
+                <img src="rio.jpg" alt="Anggota 3">
+                <h3>RIO ADIANSYAH</h3>
+                <p>Manager Produksi</p>
+            </div>
+
+            <!-- Anggota 4 -->
+            <div class="team-member">
+                <img src="lala.jpg" alt="Anggota 4">
+                <h3>SHOILA SALMA</h3>
+                <p>Manager Keuangan</p>
+            </div>
+
+            <!-- Anggota 5 -->
+            <div class="team-member">
+                <img src="manda.jpg" alt="Anggota 5">
+                <h3>AMANDA KARTKA S</h3>
+                <p>Manager Pemasaran</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</section>
+<body>
+<section id="gallery" class="gallery-section">
+    <h2>Kolase Konsumen</h2>
+    <div class="gallery">
+        <img src="k1.jpg" alt="Foto Konsumen 1">
+        <img src="k2.jpg" alt="Foto Konsumen 2">
+        <img src="k3.jpg" alt="Foto Konsumen 3">
+        <img src="k4.jpg" alt="Foto Konsumen 4">
+        <img src="k5.jpg" alt="Foto Konsumen 5">
+    </div>
+</section>
+
+<footer>
+    <p>SAVORY BREAD</p>
+</footer>
+
+</body>
+</html>
